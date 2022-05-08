@@ -2,6 +2,6 @@
 
 second task in route-academy journey
 
-using HTML and CSS basics
-using old layout methods such as "float" and "inline-block"
-adding responsiveness 
+- using HTML and CSS basics
+- using old layout methods such as "float" and "inline-block"
+- adding responsiveness 
