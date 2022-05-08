@@ -1,0 +1,871 @@
+/* general */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 , h2 , h3 , h4 , p , a ,li
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333333;
+}
+a
+{
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+.section
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+}
+.section-head
+{
+    padding: 40px 0 10px;
+    font-size: 32px;
+}
+.short-line
+{
+    width: 20%;
+    height: 1px;
+    background-color: #FF305B;
+    margin: 5px auto;
+}
+
+.long-line
+{
+    width: 50%;
+    height: 1px;
+    background-color: #FF305B;
+    margin: 5px auto;
+}
+.clr
+{
+    clear: both;
+}
+.bg-gray
+{
+    background-color: #F1F1F1;
+}
+/* mobile first */
+
+/* main section ------------------------------------ */
+.main
+{
+    background-image: url(../images/main-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+.main .main-bg
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.main .nav
+{
+    text-align: center;
+}
+.main .logo a h1
+{
+    color: #FF305B;
+    margin: 15px;
+}
+.main .nav-menu
+{
+    width: 60%;
+    margin: auto;
+}
+.main .nav-menu a
+{
+    margin: 5px 10px;
+    color: white;
+    transition: color 0.6s;
+}
+
+.main .nav-menu a:hover
+{
+    color: #FF305B;
+}
+
+.main .nav-menu a:active
+{
+    color: #FF305B;
+}
+
+.main .headline
+{
+    text-align: center;
+    padding: 40% 0;
+}
+
+.main .headline h3
+{
+    margin: 15px 0;
+    font-size: 22px;
+    color: white;
+}
+
+.main .headline h1
+{
+    font-size: 52px;
+    color: #FF305B;
+}
+
+.main .headline h4
+{
+    margin: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+
+/* about section -------------------------------------- */
+
+.about
+{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.about .image
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.about .image img
+{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.about .image .image-bg
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: top 0.7s
+}
+
+.about .image .image-bg .icons
+{
+    text-align: center;
+    padding: 50% 0 0;
+}
+
+.about .image:hover .image-bg
+{
+    top:0;
+}
+.about .image .image-bg .icons img
+{
+    width: 18px;
+    margin: 1px 6px;
+    transition: transform 0.7s
+}
+
+.about .image .image-bg .icons img:hover
+{
+    transform: scale(1.2);
+}
+
+.about .article
+{
+    margin: 20px 0;
+}
+
+.about .article h2
+{
+    font-size: 34px;
+    border-left: 5px #FF305B solid ;
+    padding-left: 5px;
+}
+
+.about .article p
+{
+    padding: 20px 0;
+    margin-bottom: 10px ;
+    border-bottom: 1px #333333 dashed ;
+}
+
+.about .article li
+{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.about .article .cta
+{
+    margin: 20px 0;
+}
+
+.about .article .cta button
+{
+    border: none;
+    padding: 12px 15px;
+    margin-right: 10px;
+    background-color: #FF305B;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: background-color 0.7s;
+}
+
+.about .article .cta button p
+{
+    float: left;
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about .article .cta button img
+{
+    width: 20px;
+    margin-left: 5px;
+}
+
+.about .article .cta button:hover
+{
+    background-color: #ec2403 ;
+}
+
+
+/* services ------------------------------------------- */
+
+.services h2
+{
+    font-size: 32px;
+}
+
+.services .item
+{
+    width: 90%;
+    margin: 50px auto 0;
+    padding: 30px 50px;
+    transition: all 0.5s;
+}
+
+.services .item img
+{
+    margin: 15px 0;
+}
+
+.services .item h3
+{
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.services .item:hover
+{
+    background-color: #ffffff;
+    box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.40);
+    -webkit-box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.40);
+    -moz-box-shadow: 5px 10px 15px 0px rgba(0,0,0,0.40);
+}
+
+/* portfolio ----------------------------------------------- */
+
+.portfolio
+{
+    text-align: center;
+}
+
+.portfolio h2
+{
+    font-size: 32px;
+}
+
+.portfolio .img-item
+{
+    margin: 25px 0;
+}
+
+.portfolio .img-item img
+{
+    width: 100%;
+}
+
+.portfolio .img-item
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio .img-item .image-bg
+{
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.7s
+}
+
+.portfolio .img-item .image-bg img
+{
+    width: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 0.7s
+}
+
+.portfolio .img-item:hover .image-bg
+{
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.portfolio .img-item:hover .image-bg img
+{
+    opacity: 1;
+}
+
+/* counter ------------------------------------------------- */
+
+
+.counter .counter-item
+{
+    margin: 40px;
+}
+
+.counter .counter-item img
+{
+    width: 26px;
+}
+
+.counter .counter-item h3
+{
+    margin: 5px 0;
+    font-size: 26px;
+}
+
+/* feedback ------------------------------------------------- */
+
+.feedback
+{
+    width: 90%;
+}
+
+.feedback h2
+{
+    font-size: 32px;
+}
+
+.feedback .card-container
+{
+    background-color: #F1F1F1;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px ;
+    position: relative;
+    border-radius: 6px ;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.feedback .card-container .traingle
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    border: solid;
+    border-width: 80px;
+    border-top-color: #FF305B;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #FF305B;
+    z-index: -1;
+}
+
+.feedback .card-container .circle
+{
+    border-radius: 50%;
+    width: 120px;
+    margin: 20px 0;
+}
+
+.feedback .card-container .card-content
+{
+    text-align: left;
+}
+
+.feedback .card-container .card-content h2
+{
+    margin: 15px 0;
+}
+
+.feedback .card-container .card-content .country
+{
+    margin: 10px 0;
+}
+
+
+.feedback .card-container .card-content .country img{
+    width: 18px;
+    float: left;
+}
+
+.feedback .card-container .card-content .country p{
+    float: left;
+}
+
+.feedback .card-container .card-content .stars
+{
+    margin: 8px 0;
+}
+
+.feedback .card-container .card-content .stars img
+{
+    width: 20px;
+}
+
+/* blog --------------------------------------------------- */
+
+.blog h2
+    {
+        font-size: 32px;
+    }
+
+.blog .blog-item
+{
+    background-color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.blog .blog-item a img
+{
+    width: 100%;
+}
+
+.blog .blog-item iframe
+{
+    width: 100%;
+    height: 300px;
+}
+
+.blog .blog-item .blog-content
+{
+    padding: 20px;
+    text-align: left;
+}
+
+.blog .blog-item .blog-content p
+{
+    margin: 5px 0;
+}
+
+.blog .blog-item .blog-content h2
+{
+    margin: 10px 0;
+}
+
+.blog .blog-item .blog-content button
+{
+    margin: 20px 0;
+    border: none;
+    background-color: transparent;
+    transition: color 0.6s;
+    cursor: pointer;
+}
+
+.blog .blog-item .blog-content button:hover
+{
+    color: #FF305B;
+}
+
+/* contact --------------------------------------------------- */
+
+.contact h2
+{
+    font-size: 32px;
+}
+
+.contact form
+{
+    margin: 20px 0;
+    padding: 10px;
+    text-align: left;
+}
+
+.contact form input
+{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+.contact form textarea
+{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+.contact form button
+{
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FF305B;
+    color: #FFFFFF;
+    transition: background 0.6s;
+    cursor: pointer;
+}
+
+.contact form button:hover
+{
+    background-color: #ec2403;
+}
+
+/* footer --------------------------------------------------- */
+
+.footer
+{
+    background-color: #333333;
+    width: 100%;
+}
+
+.footer p
+{
+    color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.footer a
+{
+    color: #FF305B;
+    margin: 0 4px;
+}
+
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+.footer .icons
+{
+    margin: 15px ;
+}
+
+.footer .icons img
+{
+    width: 20px;
+    margin: 0 5px;
+    transition: transform 0.6s;
+}
+
+.footer .icons img:hover
+{
+    transform: scale(1.2);
+}
+
+@media screen and (min-device-width: 260x) and (min-width: 260x)
+{
+    .main .headline
+    {
+        text-align: center;
+        padding: 15% 0;
+    } 
+
+}
+
+@media screen and (min-device-width: 768px) and (min-width: 768px)
+{
+    .main .logo a h1
+    {
+        float: left;
+    }
+
+    .main .nav
+    {
+        width: 90%;
+        margin: auto;
+    }
+
+    .main .nav-menu
+    {
+        float: right;
+    }
+    .main .nav
+    {
+        text-align: left;
+    }
+
+    .main .nav-menu
+    {
+        width: auto;
+        margin: 25px 0 0;
+    }
+
+    .main .headline
+    {
+        text-align: center;
+        padding: 15% 0;
+    } 
+
+    .main .headline h1
+    {
+        font-size: 72px;
+    }
+
+    .about
+    {
+        width: 90%;
+    }
+
+    .about .image-bg
+    {
+        float: left;
+        width: 45%;
+    }
+
+
+    .about .article
+    {
+        float: left;
+        width: 45%;
+        margin:0;
+        margin-left: 20px;
+    }
+
+    .about .article li
+    {
+        float: left;
+        width: 40%;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .about .article li:nth-child(even)
+    {
+        width: 60%;
+    }
+
+
+    .services h2
+    {
+        font-size: 40px;
+    }
+
+
+    .services .item
+    {
+        width: 50%;
+        float: left;
+    }
+
+    .portfolio
+    {
+        width: 95%;
+    }
+
+
+    .portfolio h2
+    {
+        font-size: 40px;
+    }
+
+    .portfolio .img-item
+    {
+        width: 49%;
+        float: left;
+        margin: 2% 0.5%;
+    }
+
+    .counter
+    {
+        width: 95%;
+        padding: 40px 0;
+    }
+
+    .counter .counter-item
+    {
+        margin: 0px 1% ;
+        float: left;
+        width: 23%;
+    }
+
+    .feedback h2
+    {
+        font-size: 40px;
+    }
+
+    .card-container .circle
+    {
+        float: left;
+        position: relative;
+
+    }
+
+    .card-container .card-content
+    {
+        float: left;
+        margin: 2% 4%;
+        width: 70%;
+    }
+
+    .blog
+    {
+        width: 95%;
+    }
+
+    .blog h2
+    {
+        font-size: 40px;
+    }
+
+    .blog .blog-item
+    {
+        width: 31%;
+        float: left;
+        margin: 1% 1%;
+    }
+
+    .blog .blog-item iframe
+    {
+        width: 100%;
+        height: 160px;
+    }
+
+    .blog .blog-item h2
+    {
+        font-size: 19px;
+    }
+
+    .contact
+    {
+        width: 95%;
+    }
+
+    .contact h2
+    {
+        font-size: 40px;
+    }
+
+    .contact form input
+    {
+        width: 48%;
+
+    }
+
+    .contact form input:nth-child(2)
+    {
+        margin-left: 3%;
+        
+    }
+
+    .contact form input:nth-child(3)
+    {
+        width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (min-device-width: 992px) and (min-width: 992px)
+{
+    .main .headline
+    {
+        text-align: center;
+        padding: 10% 0;
+    } 
+
+    .about
+    {
+        width: 80%;
+    }
+
+    .about .image-bg
+    {
+        position: relative;
+    }
+
+    .about .article
+    {
+        margin-left: 30px;
+    }
+
+
+    .about .image-stroke
+    {
+        width: 100%;
+        height: 100%;
+        border: #333333 7px solid;
+        border-radius: 5px;
+        background-color: transparent;
+        position: absolute;
+        transform: translate(-30px,-30px);
+    }
+
+    .services
+    {
+        width: 90%;
+    }
+
+
+    .services .item
+    {
+        width: 24%;
+        padding: 15px 10px;
+    }
+
+    .portfolio .img-item
+    {
+        width: 32%;
+    }
+
+    .feedback
+    {
+        width: 70%;
+    }
+
+    .blog .blog-item iframe
+    {
+        width: 100%;
+        height: 215px;
+    }
+
+    .contact
+    {
+        width: 65%;
+    }
+
+    .short-line
+    {
+    width: 8%;
+    }
+
+.long-line
+    {
+    width: 15%;
+    }
+
+}
